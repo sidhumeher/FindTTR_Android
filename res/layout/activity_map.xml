@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.findttr_android.MapActivity"
+    tools:ignore="MergeRootFrame" >
+    
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="city" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+    
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="55dp"
+        android:entries="@array/TTR_arrays" />
+    
+    <Button
+          android:id="@+id/button1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="55dp"
+          android:layout_marginLeft="200dp"
+          android:text="Search" />
+    
+      <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+    
+    
+    </RelativeLayout>
+

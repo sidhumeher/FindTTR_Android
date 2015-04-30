@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FindTTR</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    
+    <string-array name="TTR_arrays">
+        <item>Taxi</item>
+        <item>Towing</item>
+        <item>Rental</item>
+    </string-array>
+    
+</resources>
